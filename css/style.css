@@ -1,0 +1,484 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html,body{
+	margin:0%;
+	box-sizing:border-box;
+	
+}
+
+a{
+	text-decoration:none;
+	color:#6C6969;
+	font-family: Marcellus;
+	font-size:20px;
+}
+
+.flex-row{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
+}
+
+ul{
+	list-style-type:none;
+	
+}
+
+.nav{
+	background:white;
+	padding:0 1rem;
+	height:0rem;
+	min-height:20vh;
+	overflow:hidden;
+	transition:height 1.5s ease-in-out;
+}
+
+.nav .nav-menu{
+	justify-content:space-between;
+	
+}
+
+.nav .toggle-collapse{
+	position:absolute;
+	top:0%;
+	width:90%;
+	cursor:pointer;
+	display:none;
+	
+}
+
+.nav .toggle-collapse .toggle-icon{
+	display:flex;
+	justify-content: flex-end;
+	padding:1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icon i{
+	font-size:1.4rem;
+	color:#6C6969;
+}
+
+.collapse{
+	height:40rem;
+
+}
+
+
+.nav .nav-items{
+	display:flex;
+	margin:20;
+}
+
+.nav .nav-items .nav-link{
+	padding:1.6rem 1.2rem;
+	font-size: 1.2rem;
+    position: relative;
+	
+}
+
+.nav .nav-items .nav-link:hover{
+	background-color:#FFC107;
+	border-radius:30px;
+	
+}
+
+.nav .nav-items .nav-link:hover a{
+	color: white;
+	
+}
+
+.nav .social{
+	padding: 2.8rem 0;
+}
+
+.nav .social i{
+	padding: 0rem;
+	font-size:30px;
+	color:#FFC107;
+	margin-right:50px;
+
+
+}
+
+.nav .social i:hover{
+	color: red;
+}
+
+
+@media only screen and (max-width:750px){
+	.nav .nav-menu, .nav .nav-items{
+		flex-direction:column;
+	}
+	
+	.nav .toggle-collapse{
+		display:initial;
+	}
+}
+
+.wrapper-text{
+		text-align:left;
+		opacity:0;
+		animation:ani2 0.5s ease-out forwards;	
+}
+	
+.wrapper-text h1{
+		opacity:0;
+		margin:0;
+}
+		
+.wrapper-text h1{
+		animation: ani2 0.75s ease-out 3s forwards;
+}
+		
+@keyframes ani2{
+		100%{
+		opacity:1;
+	}
+}
+
+.bingkai{
+	width:100%;
+	height: 550px;
+	background-color:#FFC107;
+	opacity:0.9;
+	
+}
+
+.bingkai2{
+	width:100%;
+	height: 540px;
+	background-color:#FFC107;
+	margin-top:480px;
+	border-radius:170px 0 0 0;
+}
+
+.bingkai3{
+	width:550px;
+	height: 200px;
+	background-color:#FFC107;
+	margin-top:-230px;
+	margin-left:100px;
+	
+}
+
+.bingkai4{
+	width:180px;
+	height:200px;
+	background-color:blue;
+	margin-left:70px;
+	margin-top:50px;
+	
+}
+
+.bingkai5{
+	width:600px;
+	height:280px;
+	background-color:none;
+	margin-left:630px;
+	margin-top:-365px;
+	
+}
+
+.box1{
+	width:330px;
+	height:90px;
+	background-color:#FFC107;
+	margin-left:100px;
+	margin-top:30px;
+	position:absolute;
+	
+}
+
+.box2{
+	width:50px;
+	height:40px;
+	background-color:#FFC107;
+	position:absolute;
+	margin-top:8px;
+	margin-left:10px;
+	font-size:30px;
+	text-align:center;
+	padding-top:10px;
+}
+
+.box3{
+	width: 250px;
+	height:50px;
+	background-color:#FFC107;
+	position:absolute;
+	margin-top:8px;
+	margin-left:68px;
+	
+}
+
+.box4{
+	width:600px;
+	height:1200px;
+	background-color:none;
+	margin-left:80px;
+	margin-top: 70px;
+}
+
+
+
+
+
+.footer2{
+	width:100%;
+	height: 50px;
+	background-color:#FFC107;
+	border-radius: 0 0 210px 0 ;
+	text-align:center;
+	
+}
+
+
+.chips{
+	width:80px;
+	height: 80px;
+	background-color:#FFC107;
+	margin-top:-150px;
+	
+}
+
+.container{
+	left:350px;
+	top:550px;
+	transform:translate(-50%, -50%);
+	text-align:center;
+	
+}
+
+.btn{
+	border:none;
+	margin:15px;
+	padding:15px;
+	width:200px;
+	border-radius:30px;
+	color:white;
+	transition:0.7s;
+	margin-left:720px;
+	margin-top:150px;
+	background-color:white;	
+}
+
+.pesan{
+	background-color:white;	
+}
+
+.btn:hover{
+	background-color:red;
+	
+}
+
+
+
+.slide{
+	max-width:520px;
+	height:400px;
+	position:relative;
+	display:absolute;
+	z-index:-100;
+	margin-left:740px;
+	top:75px;
+	border-radius:100%;
+			
+}
+		
+.slide1,.slide2,.slide3{
+	position:absolute;
+	width:100%;
+	height:400px;
+		
+}
+		
+.slide1{
+	background:url('../aset/all.jpeg') no-repeat center;
+	background-size:500px;
+	animation: fade 8s infinite;
+	-webkit-animation: fade 8s infinite;
+	position:absolute;
+	border-radius:120px 120px 120px 0;
+			
+}
+		
+.slide2{
+	background:url('../aset/satu.jpeg') no-repeat center;
+	background-size:500px;
+	animation: fade2 8s infinite;
+	-webkit-animation: fade2 8s infinite;
+	position:absolute;
+	border-radius:120px 120px 120px 0;
+}
+		
+.slide3{
+	background:url('../aset/jagung.jpeg') no-repeat center;
+	background-size:500px;
+	animation: fade3 8s infinite;
+	-webkit-animation: fade3 8s infinite;
+	position:absolute;
+	border-radius:120px 120px 120px 0;
+}
+		
+@keyframes fade{
+	0%{opacity:1}
+	33.333%{opacity:0}
+	66.666%{opacity:0}
+	100%{opacity:1}	
+			
+}
+		
+@keyframes fade2{
+	0%{opacity:0}
+	33.333%{opacity:1}
+	66.666%{opacity:0}
+	100%{opacity:0}
+}
+		
+@keyframes fade3{
+	0%{opacity:0}
+	33.333%{opacity:0}
+	66.666%{opacity:1}
+	100%{opacity:0}
+}
+
+.circle{
+	width:210px;
+	height:210px;
+	background-color:#FFC107;
+	margin-left:165px;
+	margin-top:50px;
+	border-radius:100%;
+	
+}
+
+.kotak{
+	width:300px;
+	height:120px;
+	background-color:none;
+	margin-left:340px;
+	margin-top:-170px;
+	
+}
+
+.icon {
+	transform:translateY(-50%);
+	text-align:center;
+	margin-top:17px;
+	margin-left:1020px;
+
+}
+
+.tombol{
+	display:inline-block;
+	width:40px;
+	height:30px;
+	background-color:#FFC107;
+	margin:10px;
+	border-radius:100%;
+	box-sizing: 0.5px, 15px, -5px #00000070;
+	overflow:hidden;
+	padding-top:10px;
+	
+}
+
+.tombol i{
+	transition:0.2s linear;
+	font-size:26px;
+	line-height:90%;
+}
+
+.tombol:hover{
+	transform: scale(1.3);
+
+}
+
+.container2{
+	max-width:1200px;
+	background-color:#D96704;
+	margin:auto;
+	
+}
+
+.footer1{
+	background-color:#D96704;
+
+
+	
+}
+
+.footer1-col{
+	width:30%;
+	padding: 0 15px;
+	
+}
+
+.footer1-col ul li:not(:last-child){
+	margin-bottom:15px;
+	
+}
+
+.footer1-col ul li a{
+	color:black;
+	
+	
+}
+
+.footer1-col ul li a:hover{
+	color:black;
+	padding-left:10px;
+	
+}
+
+.footer1-col .social-links{
+	margin-top: 40px;
+	margin-left:150px;
+	
+
+}
+
+.footer1-col .social-links i:hover{
+	transform: scale(1.3);
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+
+
+@media (max-width:767px){
+	
+	.footer1{
+		
+		width:50%;
+		
+	}
+	
+	.footer1-col ul li iframe{
+		width:200px;
+		
+	}
+	
+	.footer1-col .social-links i{
+		margin-left:0px;
+	}
+	
+}
+
+@media (max-width:574px){
+	.footer1{
+		
+		width:100%;
+		
+	}
+	
+}
+
+table{
+	border-spacing:40px;
+	border-style:none;		
+}
